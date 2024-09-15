@@ -22,5 +22,4 @@ for i in range(len(list_password)):
         unic_password+=(str(list_password[i][j]))
 
 
-print(password)
 print('Пароль для числа ', n,'равен', unic_password)
