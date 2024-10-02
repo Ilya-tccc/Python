@@ -5,3 +5,6 @@ def divide(first,second):
         return inf
     else:
         return first/second
+
+
+# print(divide(12412,354))

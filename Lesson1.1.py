@@ -7,3 +7,7 @@ print(example[len(example)//2:])#По заданию необходимо выв
 print(example[::-1])
 print(example[::2])
 
+FIO='''Иванов
+Иван 
+Иванович'''
+print(FIO)
