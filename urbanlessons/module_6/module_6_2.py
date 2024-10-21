@@ -30,11 +30,14 @@ class Vehicle:
         print(f'Владелец:{self.owner}')
 
     def set_color(self, new_color):
-        for color in self.__COLOR_VARIANTS:
-            if new_color.upper() == color.upper():
-                self.__color = new_color
-        if new_color.upper() != self.__color.upper():
-            print(f'Нельзя сменить цвет на {new_color}')
+        # for color in self.__COLOR_VARIANTS:
+        #     if new_color.upper() == color.upper():
+        #         self.__color = new_color
+        # if new_color.upper() != self.__color.upper():
+        #     print(f'Нельзя сменить цвет на {new_color}')
+        # Строки выше можно заменить одной строкой ниже
+        self.__color = new_color if new_color.upper() in (color.upper() for color in self.__COLOR_VARIANTS) else print(
+            f'Нельзя сменить цвет на {new_color}')
 
 
 class Sedan(Vehicle):
